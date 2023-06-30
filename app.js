@@ -37,17 +37,7 @@ app.get('/', async (req, res) => {
     let activeCollectionData = [];
 
     // Fetch images from the active collection dynamically
-    // for (let i = 0; i < activeCollections.length; i++) {
-    //   const collectionName = activeCollections[i];
-    //   const collectionModel = require(`./models/${collectionName}`);
-
-    //   let collectionData = await collectionModel.find({});
-
-    //   activeCollectionData.push({
-    //     collectionName,
-    //     images: collectionData,
-    //   });
-    // }
+      
     for (const collectionName of activeCollections) {
     const collectionModel = require(`./models/${collectionName}`);
     let collectionData = await collectionModel.find({});
