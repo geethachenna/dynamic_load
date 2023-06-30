@@ -2,7 +2,7 @@ const dotenv = require('dotenv').config();
 const moment = require('moment');
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
-const app = express();
+let app = express();
 const config = require('./config.json');
 
 const port = process.env.PORT || 5051;
