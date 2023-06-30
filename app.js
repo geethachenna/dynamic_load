@@ -3,6 +3,7 @@ const moment = require('moment');
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 let app = express();
+app.disable("x-powered-by");
 const config = require('./config.json');
 
 const port = process.env.PORT || 5051;
